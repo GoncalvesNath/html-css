@@ -12,7 +12,7 @@
 </head>
 <body>
     <h1>Meu primeiro formulário</h1>
-    <form action="cadastro.php" autocomplete="off">
+    <form action="cadastro.php" method="post" autocomplete="off"> <!--method post exclui a exposição dos dados na url, mas não deixa as informações criptografadas, já o method get não esconde as i formações mas possui um limite de até 3 mil letras e não pode ser usado com dados sensíveis-->
         <p><label for="inome">Nome:</label> <!--Label é usado para fazer a relção do objeto do formulário e sua etiqueta-->
             <input type="text" name="nome" id="inome"></p>
         <p><label for="isobrenome">Sobrenome:</label> 
